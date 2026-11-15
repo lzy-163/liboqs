@@ -1,0 +1,9 @@
+name: Scorecard replay
+on: pull_request
+permissions:
+  contents: read
+  security-events: write
+  id-token: write
+jobs:
+  original:
+    uses: ./.github/workflows/scorecard.yml
