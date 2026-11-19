@@ -1,0 +1,7 @@
+name: BFP baseline caller
+on: push
+permissions:
+  contents: read
+jobs:
+  target:
+    uses: ./.github/workflows/zephyr.yml
