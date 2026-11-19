@@ -1,0 +1,9 @@
+name: BFP Scorecard baseline caller
+on: push
+permissions:
+  contents: read
+  security-events: write
+  id-token: write
+jobs:
+  target:
+    uses: ./.github/workflows/scorecard.yml
