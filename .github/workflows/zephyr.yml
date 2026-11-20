@@ -40,7 +40,7 @@ jobs:
             echo "          - picolibc" >> west.yml
             echo "    - name: liboqs" >> west.yml
             echo "      remote: liboqs" >> west.yml
-            echo "      revision: $(echo '${{ github.ref }}' | sed -e 's/refs\/heads\///')" >> west.yml
+            echo "      revision: ${{ github.sha }}" >> west.yml
             echo "      path: modules/crypto/liboqs" >> west.yml
             west init -l --mf west.yml .
 
