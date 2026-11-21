@@ -15,12 +15,12 @@ jobs:
     name: Scorecard analysis
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       # Needed to upload the results to code-scanning dashboard.
       security-events: write
       # Needed to publish results and get a badge (see publish_results below).
       id-token: write
-      # Uncomment the permissions below if installing in a private repository.
-      # contents: read
+      # Uncomment the permission below if installing in a private repository.
       # actions: read
 
     steps:
