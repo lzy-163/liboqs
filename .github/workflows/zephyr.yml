@@ -22,8 +22,8 @@ jobs:
     steps:
         - name: Init Zephyr workspace
           run: |
-            mkdir zephyr && cd zephyr
-            mkdir manifest && cd manifest
+            mkdir -p zephyr/manifest
+            cd zephyr/manifest
             echo "manifest:" > west.yml
             echo "  remotes:" >> west.yml
             echo "    - name: zephyr" >> west.yml
