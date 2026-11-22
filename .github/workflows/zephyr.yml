@@ -38,6 +38,7 @@ jobs:
             echo "      import:" >> west.yml
             echo "        name-allowlist:" >> west.yml
             echo "          - picolibc" >> west.yml
+            echo "          - cmsis" >> west.yml
             echo "    - name: liboqs" >> west.yml
             echo "      remote: liboqs" >> west.yml
             echo "      revision: $(echo '${{ github.ref }}' | sed -e 's/refs\/heads\///')" >> west.yml
