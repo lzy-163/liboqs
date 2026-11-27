@@ -50,6 +50,9 @@ jobs:
             west update -n -o=--depth=1
             west zephyr-export
 
+        - name: Install Twister compatibility dependency
+          run: python -m pip install 'setuptools<81'
+
         - name: Run Signature test
           working-directory: zephyr
           run: |
